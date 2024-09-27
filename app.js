@@ -2,4 +2,10 @@ var name = "Abir";
 var life = 100;
 
 life = life - 10;
-console.log(life);
+
+const age = 30;
+// const age = 23;//const won't allow me to chagne the value
+
+var balance = 230;
+var balance = 1200; // var will allow me to change that.
+console.log(life, balance);
