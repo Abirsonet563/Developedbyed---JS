@@ -1,15 +1,35 @@
-var name = "Abir";
-var life = 100;
+const name = "Abir Hasan";
 
-life = life - 10;
+function toUpper (){
+    console.log("Abir Hasan");
+    console.log("Abir Hasan");
+}
+toUpper();
 
-const age = 30;
-// const age = 23;//const won't allow me to chagne the value
+//---------------------
+//Inject Value through function
 
-var balance = 230;
-var balance = 1200; // var will allow me to change that.
-console.log(life, balance);
+function adder(num1, num2){
+    console.log(num1 + num2);
+    console.log(num2 + num1);
+}
+adder(12,21);
 
-let debt = 1000;
-debt = debt - 500; // let will allow me to change the number
-console.log(debt);
+//UpperCase
+function upper(text){
+ const upperLetter = text.toUpperCase();
+ console.log(upperLetter); 
+}
+upper(name);
+
+//Another way to Write Function
+const name2 = function(){
+    console.log("Abir");
+}
+name2();
+
+//Arraw Function
+const arrows = () =>{
+    console.log("Arraw Function")
+} 
+arrows();
