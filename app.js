@@ -1,35 +1,14 @@
-const name = "Abir Hasan";
+// const name = 'Hi it's me // To solve this problem
+const name2 = "Hi it's me"// We can use this
+const name3 = `Hi it's me` //We cab use this too
 
-function toUpper (){
-    console.log("Abir Hasan");
-    console.log("Abir Hasan");
-}
-toUpper();
+console.log( name2, name3)
 
-//---------------------
-//Inject Value through function
+const age = 21;
+const City = "Tangail";
+const combined = age + City//Both are string
 
-function adder(num1, num2){
-    console.log(num1 + num2);
-    console.log(num2 + num1);
-}
-adder(12,21);
+const print = `Hi I'm ${age} years old. I'm from ${City} city.`//Wright way to write code
+const print2 = "Hi I'm " + age + " years old, I'm from " + City + " city"//Wrong way to Write
+console.log(print, print2, combined);
 
-//UpperCase
-function upper(text){
- const upperLetter = text.toUpperCase();
- console.log(upperLetter); 
-}
-upper(name);
-
-//Another way to Write Function
-const name2 = function(){
-    console.log("Abir");
-}
-name2();
-
-//Arraw Function
-const arrows = () =>{
-    console.log("Arraw Function")
-} 
-arrows();
