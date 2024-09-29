@@ -1,26 +1,22 @@
-//Array
+const user = {
+    name: "Abir Hasan",
+    age: "23",
+    married: "False",
+    purchase: ["Mobile","Laptop","Bag"],
+    sayName: function(){
+        console.log(this.name);
+    }
+};
+ user.sayName();
+// console.log(user.sayName,user.name);
 
-const schedule = ["Wake up", "Eat", "Watch things on Netflix"]
+function apple (){
+    console.log("apples")
+}
+//console.log(this);
 
-//Print Array value
-console.log(schedule[1]);
-//Push Array value
- schedule.push("Sleep");
-
-//Remove array value
-schedule.pop();
-//To remove from front
-schedule.shift();
-//To add at the front
-schedule.unshift("Hi");
-console.log(schedule);
-
-//To get the index number
-console.log(schedule.indexOf("Eat"))
-
-//Add another layer on it
-
-const film = schedule.indexOf("Watch things on Netflix")
-console.log(film)
-//We can write it this way as well.
-console.log(schedule[film])
+//Focuse default window object 
+function nameTwo(){
+    console.log(this)
+}
+nameTwo();
