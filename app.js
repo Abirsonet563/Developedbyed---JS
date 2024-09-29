@@ -1,14 +1,29 @@
-// const name = 'Hi it's me // To solve this problem
-const name2 = "Hi it's me"// We can use this
-const name3 = `Hi it's me` //We cab use this too
+//If else statement 
+const age = 13;
 
-console.log( name2, name3)
+if (age > 13){
+    console.log("age is bigger than 14")
+}else if(age === 13){
+console.log("You are 13 years old")
+}
+else{
+    console.log("Age is smaller than 14")
+}
 
-const age = 21;
-const City = "Tangail";
-const combined = age + City//Both are string
+//Double Condition check
+const dice1 = 6;
+const dice2 = 3;
 
-const print = `Hi I'm ${age} years old. I'm from ${City} city.`//Wright way to write code
-const print2 = "Hi I'm " + age + " years old, I'm from " + City + " city"//Wrong way to Write
-console.log(print, print2, combined);
+if(dice1 === 6 && dice2 === 3){
+    console.log("You did it")
+}else{
+     console.log("You didn't")
+}
 
+//Double Condition check but one condition need to be true
+
+if(dice1 === 6 || dice2 === 6){
+    console.log("You did it")
+}else{
+     console.log("You didn't")
+}
