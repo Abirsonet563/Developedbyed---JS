@@ -1,29 +1,26 @@
-//If else statement 
-const age = 13;
+//Array
 
-if (age > 13){
-    console.log("age is bigger than 14")
-}else if(age === 13){
-console.log("You are 13 years old")
-}
-else{
-    console.log("Age is smaller than 14")
-}
+const schedule = ["Wake up", "Eat", "Watch things on Netflix"]
 
-//Double Condition check
-const dice1 = 6;
-const dice2 = 3;
+//Print Array value
+console.log(schedule[1]);
+//Push Array value
+ schedule.push("Sleep");
 
-if(dice1 === 6 && dice2 === 3){
-    console.log("You did it")
-}else{
-     console.log("You didn't")
-}
+//Remove array value
+schedule.pop();
+//To remove from front
+schedule.shift();
+//To add at the front
+schedule.unshift("Hi");
+console.log(schedule);
 
-//Double Condition check but one condition need to be true
+//To get the index number
+console.log(schedule.indexOf("Eat"))
 
-if(dice1 === 6 || dice2 === 6){
-    console.log("You did it")
-}else{
-     console.log("You didn't")
-}
+//Add another layer on it
+
+const film = schedule.indexOf("Watch things on Netflix")
+console.log(film)
+//We can write it this way as well.
+console.log(schedule[film])
