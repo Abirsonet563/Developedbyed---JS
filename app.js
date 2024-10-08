@@ -1,29 +1,40 @@
-//For Loop
+// const text = document.querySelector(".title");
+// const changeColor = document.querySelector(".changeColor");
 
-const name = ["Abir","Hasan","Saif","Hasan"]
+// //Add Color to Class
+// text.style.color= "red";
+// //Remove color to Class
+// // text.style.remove
+// text.style.backgroundColor = "green"
 
-for (names of name){
-    console.log(names);
-    console.log(`Hello There ${names}`)
-}
+// //To add Class from CSS
+// text.classList.add('change')
 
-//Add condition inside Foor Loop
-for (names of name){
-    if (names === "Abir"){
-        console.log("Abir In my List");
-        // break;
-    }
-}
+// //To remove Class from CSS
+// text.classList.add('change')
 
-//while loop
-let loading = 100
+// //Click Me button 
+// changeColor.addEventListener('click',function(){
+//     // text.classList.remove('change')
+//     text.classList.toggle('change') //It will add and remove class upon click
+// })
+//NameList
+// const userList = document.querySelectorAll(".name-list li");
+// console.log(userList);
 
-while(loading < 1000){
-    console.log("Still Loading")
-    loading ++;
-}
+// for (user of userList){
+//     user.addEventListener("click",function(){
+//         this.style.backgroundColor = 'pink';
+//     });
+// }
 
-while (loading < 1001){
-    console.log("Still Loading")
-    loading += 1;
-}
+const userList = document.querySelectorAll(".name-list");
+const addListBtn = document.querySelector(".addListBtn");
+const listInput = document.querySelector(".list-input");
+
+addListBtn.addEventListener("click",function() {
+    const newLi = document.createElement("LI");
+    const liContent = document.createTextNode(listInput.value);
+    newLi.appendChild(liContent);
+    userList.appendChild(newLi);
+});
